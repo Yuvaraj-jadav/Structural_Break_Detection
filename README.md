@@ -40,7 +40,7 @@ We use **Logistic Regression** to estimate the probability of a structural break
 z=θ0​+θ1​(Δmean)+θ2​(Δvar)+θ3​(Δstd)+θ4​(Δskew)+θ5​(Δkurt)
 
 \[
-hθ​(x)=1/(1+e(−z1​))
+hθ​(x)=1/(1+e^(−z1​))
 \]
 
 - Optimization via **gradient descent**  
