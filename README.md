@@ -37,9 +37,9 @@ X = [\Delta \mu, \Delta \sigma^2, \Delta \sigma, \Delta \text{skew}, \Delta \tex
 
 ### 3️⃣ Model Training — Logistic Regression  
 We use **Logistic Regression** to estimate the probability of a structural break:
-
+z=θ0​+θ1​(Δmean)+θ2​(Δvar)+θ3​(Δstd)+θ4​(Δskew)+θ5​(Δkurt)
 \[
-h_\theta(x) = \frac{1}{1 + e^{-(\theta_0 + \theta_1x_1 + ... + \theta_nx_n)}}
+hθ​(x)=1/(1+e−z1​)
 \]
 
 - Optimization via **gradient descent**  
