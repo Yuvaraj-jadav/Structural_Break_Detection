@@ -32,14 +32,15 @@ We extract statistical differences between the segments before and after the bre
 
 Each time series is represented by a feature vector:
 \[
-X = [\Delta \mu, \Delta \sigma^2, \Delta \sigma, \Delta \text{skew}, \Delta \text{kurt}]
+X = [Δmean,Δvar,Δstd,Δskew,Δkurt]
 \]
 
 ### 3️⃣ Model Training — Logistic Regression  
 We use **Logistic Regression** to estimate the probability of a structural break:
 z=θ0​+θ1​(Δmean)+θ2​(Δvar)+θ3​(Δstd)+θ4​(Δskew)+θ5​(Δkurt)
+
 \[
-hθ​(x)=1/(1+e−z1​)
+hθ​(x)=1/(1+e(−z1​))
 \]
 
 - Optimization via **gradient descent**  
