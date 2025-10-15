@@ -62,8 +62,8 @@ Performance on the synthetic dataset demonstrates high accuracy and reliability:
 
 | Metric | Value |
 |:--|--:|
-| Accuracy | ~93% |
-| ROC–AUC | ~0.97 |
+| Accuracy | ~70% |
+| ROC–AUC | ~0.38 |
 
 The model successfully captures structural shifts by analyzing changes in mean, variance, skewness, and kurtosis.
 
